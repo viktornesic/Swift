@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bariol_Bold.otf">
+            <string>Bariol-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YfI-zf-RLR" customClass="DateSelectView" customModule="Cronoz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y57-rd-OCy">
+                    <rect key="frame" x="5" y="20" width="270" height="201"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQU-zd-0fc" customClass="PickerView" customModule="PickerView">
+                            <rect key="frame" x="15" y="36" width="80" height="128"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="WGI-2p-fUt"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilJ-fH-Dyq" customClass="PickerView" customModule="PickerView">
+                            <rect key="frame" x="95" y="36" width="80" height="128"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pzp-qi-Ifb" customClass="PickerView" customModule="PickerView">
+                            <rect key="frame" x="175" y="36" width="80" height="128"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="CwS-WH-WNt"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4C-L7-3NV">
+                            <rect key="frame" x="105" y="81" width="1" height="40"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="0.5" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="d30-Ih-70D"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjp-nx-Pu5">
+                            <rect key="frame" x="165" y="81" width="1" height="40"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="0.5" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="xEz-6q-9EE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="L4C-L7-3NV" firstAttribute="leading" secondItem="VQU-zd-0fc" secondAttribute="trailing" constant="10" id="77M-OC-FqW"/>
+                        <constraint firstAttribute="bottom" secondItem="L4C-L7-3NV" secondAttribute="bottom" constant="80" id="D2R-OS-hpk"/>
+                        <constraint firstAttribute="bottom" secondItem="rjp-nx-Pu5" secondAttribute="bottom" constant="80" id="H8D-Rp-v3W"/>
+                        <constraint firstAttribute="trailing" secondItem="rjp-nx-Pu5" secondAttribute="trailing" constant="104" id="J8I-wd-gPF"/>
+                        <constraint firstItem="VQU-zd-0fc" firstAttribute="leading" secondItem="y57-rd-OCy" secondAttribute="leading" constant="15" id="Lao-ya-SLk"/>
+                        <constraint firstItem="L4C-L7-3NV" firstAttribute="top" secondItem="y57-rd-OCy" secondAttribute="top" constant="81" id="Mup-DY-eq5"/>
+                        <constraint firstItem="ilJ-fH-Dyq" firstAttribute="top" secondItem="y57-rd-OCy" secondAttribute="top" constant="36" id="Pv4-5B-dTL"/>
+                        <constraint firstAttribute="bottom" secondItem="ilJ-fH-Dyq" secondAttribute="bottom" constant="37" id="ZYz-NJ-x1C"/>
+                        <constraint firstAttribute="bottom" secondItem="VQU-zd-0fc" secondAttribute="bottom" constant="37" id="aqg-lR-7Ma"/>
+                        <constraint firstItem="VQU-zd-0fc" firstAttribute="top" secondItem="y57-rd-OCy" secondAttribute="top" constant="36" id="gVb-XH-gxe"/>
+                        <constraint firstItem="rjp-nx-Pu5" firstAttribute="top" secondItem="y57-rd-OCy" secondAttribute="top" constant="81" id="gs2-3u-YvQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Pzp-qi-Ifb" secondAttribute="trailing" constant="15" id="iev-gY-fOt"/>
+                        <constraint firstItem="Pzp-qi-Ifb" firstAttribute="leading" secondItem="ilJ-fH-Dyq" secondAttribute="trailing" id="nDA-7W-JQq"/>
+                        <constraint firstItem="Pzp-qi-Ifb" firstAttribute="top" secondItem="y57-rd-OCy" secondAttribute="top" constant="36" id="uRI-gG-Yty"/>
+                        <constraint firstItem="ilJ-fH-Dyq" firstAttribute="leading" secondItem="VQU-zd-0fc" secondAttribute="trailing" id="xZz-L9-SRr"/>
+                        <constraint firstAttribute="bottom" secondItem="Pzp-qi-Ifb" secondAttribute="bottom" constant="37" id="xjp-NZ-y9I"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgGradientBg" translatesAutoresizingMaskIntoConstraints="NO" id="6ZP-vz-tZQ">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="46"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgGradientBg" translatesAutoresizingMaskIntoConstraints="NO" id="bsO-rR-fW4">
+                    <rect key="frame" x="0.0" y="195" width="280" height="46"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfm-gS-fov">
+                    <rect key="frame" x="20" y="203" width="240" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="Bariol-Bold" family="Bariol" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Next"/>
+                    <connections>
+                        <action selector="onNext:" destination="YfI-zf-RLR" eventType="touchUpInside" id="mJF-uc-MWS"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book at?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2h-d4-IlU">
+                    <rect key="frame" x="127" y="13" width="69" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Bariol-Bold" family="Bariol" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icoBookAt" translatesAutoresizingMaskIntoConstraints="NO" id="yol-BE-n91">
+                    <rect key="frame" x="85" y="13" width="40" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="y57-rd-OCy" secondAttribute="trailing" constant="5" id="9yk-Q7-ZSv"/>
+                <constraint firstAttribute="bottom" secondItem="y57-rd-OCy" secondAttribute="bottom" constant="19" id="QeW-as-04R"/>
+                <constraint firstItem="y57-rd-OCy" firstAttribute="leading" secondItem="YfI-zf-RLR" secondAttribute="leading" constant="5" id="StS-iV-pEe"/>
+                <constraint firstItem="y57-rd-OCy" firstAttribute="top" secondItem="YfI-zf-RLR" secondAttribute="top" constant="20" id="wEo-hT-6x5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dayPickerView" destination="ilJ-fH-Dyq" id="0iL-HF-uYL"/>
+                <outlet property="monthPickerView" destination="VQU-zd-0fc" id="puv-fi-fZL"/>
+                <outlet property="yearPickerView" destination="Pzp-qi-Ifb" id="Wzg-Vh-Af0"/>
+            </connections>
+            <point key="canvasLocation" x="-88" y="4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icoBookAt" width="19" height="21"/>
+        <image name="imgGradientBg" width="669" height="104"/>
+    </resources>
+</document>

@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C3367396FD2F1A4DC66738F /* Pods_Cronoz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78754A637EE5423265677FC /* Pods_Cronoz.framework */; };
+		F846D0F01F34C5DD0007C353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846D0EF1F34C5DD0007C353 /* AppDelegate.swift */; };
+		F846D0F21F34C5DD0007C353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846D0F11F34C5DD0007C353 /* ViewController.swift */; };
+		F846D0F51F34C5DE0007C353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F846D0F31F34C5DE0007C353 /* Main.storyboard */; };
+		F846D0F71F34C5DE0007C353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F846D0F61F34C5DE0007C353 /* Assets.xcassets */; };
+		F846D0FA1F34C5DE0007C353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F846D0F81F34C5DE0007C353 /* LaunchScreen.storyboard */; };
+		F846D1131F34C9E10007C353 /* ico_facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F846D10C1F34C9E10007C353 /* ico_facebook@2x.png */; };
+		F846D1141F34C9E10007C353 /* ico_google@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F846D10D1F34C9E10007C353 /* ico_google@2x.png */; };
+		F846D1151F34C9E10007C353 /* ico_instagram@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F846D10E1F34C9E10007C353 /* ico_instagram@2x.png */; };
+		F846D1161F34C9E10007C353 /* ico_lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F846D10F1F34C9E10007C353 /* ico_lock@2x.png */; };
+		F846D1171F34C9E10007C353 /* ico_twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F846D1101F34C9E10007C353 /* ico_twitter@2x.png */; };
+		F846D1181F34C9E10007C353 /* img_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F846D1111F34C9E10007C353 /* img_bg@2x.png */; };
+		F846D1191F34C9E10007C353 /* img_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F846D1121F34C9E10007C353 /* img_logo@2x.png */; };
+		F846D11A1F34CE470007C353 /* Bariol_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F846D1081F34C7EB0007C353 /* Bariol_Bold.otf */; };
+		F846D11B1F34CE470007C353 /* Bariol_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F846D1091F34C7EB0007C353 /* Bariol_Light.otf */; };
+		F846D11C1F34CE470007C353 /* Bariol_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F846D10A1F34C7EB0007C353 /* Bariol_Regular.otf */; };
+		F846D11D1F34CE470007C353 /* Bariol_Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = F846D10B1F34C7EB0007C353 /* Bariol_Thin.otf */; };
+		F84E3A931F3BE84A005809EC /* HotelItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E3A921F3BE849005809EC /* HotelItemView.swift */; };
+		F84E3A951F3BE858005809EC /* HotelItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84E3A941F3BE858005809EC /* HotelItemView.xib */; };
+		F84E3A971F3BFCD0005809EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F84E3A961F3BFCD0005809EC /* GoogleService-Info.plist */; };
+		F84E3A9B1F3C91DD005809EC /* UIColor+RGBHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E3A9A1F3C91DD005809EC /* UIColor+RGBHex.swift */; };
+		F84E3A9D1F3C99D0005809EC /* CronozNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E3A9C1F3C99D0005809EC /* CronozNavigationController.swift */; };
+		F84E3A9F1F3CECCF005809EC /* HoursSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E3A9E1F3CECCF005809EC /* HoursSelectView.swift */; };
+		F84E3AA11F3CECDE005809EC /* HoursSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84E3AA01F3CECDE005809EC /* HoursSelectView.xib */; };
+		F84E3AA31F3D3AA2005809EC /* HotelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E3AA21F3D3AA2005809EC /* HotelInfo.swift */; };
+		F84E3AA51F3D3AAC005809EC /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E3AA41F3D3AAC005809EC /* UserInfo.swift */; };
+		F84E3AA71F3D3AB6005809EC /* BookingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E3AA61F3D3AB6005809EC /* BookingInfo.swift */; };
+		F8856BE91F38B0F400AB8B56 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8856BE81F38B0F400AB8B56 /* SideMenuViewController.swift */; };
+		F8856BEB1F38B4E700AB8B56 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8856BEA1F38B4E700AB8B56 /* MenuTableViewCell.swift */; };
+		F8856BEE1F38B9F000AB8B56 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8856BED1F38B9F000AB8B56 /* MapKit.framework */; };
+		F8856BF01F38BAC300AB8B56 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8856BEF1F38BAC300AB8B56 /* MainViewController.swift */; };
+		F8B2975F1F5D87F200008B8D /* DateSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B2975E1F5D87F200008B8D /* DateSelectView.xib */; };
+		F8B297611F5D8A0700008B8D /* DateSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B297601F5D8A0700008B8D /* DateSelectView.swift */; };
+		F8B297631F5D97B100008B8D /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B297621F5D97B100008B8D /* TimePickerView.swift */; };
+		F8B297651F5D97D100008B8D /* TimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B297641F5D97D100008B8D /* TimePickerView.xib */; };
+		F8DE05371F3A541100024EAC /* HotelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE05361F3A541100024EAC /* HotelDetailViewController.swift */; };
+		F8DE053C1F3AAD0900024EAC /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8DE05381F3AA92C00024EAC /* OpenSans-Bold.ttf */; };
+		F8DE053D1F3AAD0900024EAC /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8DE05391F3AA92C00024EAC /* OpenSans-Light.ttf */; };
+		F8DE053E1F3AAD0900024EAC /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8DE053A1F3AA92C00024EAC /* OpenSans-Regular.ttf */; };
+		F8DE053F1F3AAD0900024EAC /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8DE053B1F3AA92C00024EAC /* OpenSans-Semibold.ttf */; };
+		F8DE05431F3BAB1200024EAC /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8DE05421F3BAB1200024EAC /* FilterView.xib */; };
+		F8DE05451F3BAB6400024EAC /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE05441F3BAB6400024EAC /* FilterView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58B543E0CDC5B06CF4D9394C /* Pods-Cronoz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cronoz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cronoz/Pods-Cronoz.debug.xcconfig"; sourceTree = "<group>"; };
+		732AAF5B2DEBB3206DD363DE /* Pods-Cronoz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cronoz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cronoz/Pods-Cronoz.release.xcconfig"; sourceTree = "<group>"; };
+		F78754A637EE5423265677FC /* Pods_Cronoz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cronoz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F846D0EC1F34C5DD0007C353 /* Cronoz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cronoz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F846D0EF1F34C5DD0007C353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		F846D0F11F34C5DD0007C353 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F846D0F41F34C5DE0007C353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F846D0F61F34C5DE0007C353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		F846D0F91F34C5DE0007C353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F846D0FB1F34C5DE0007C353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		F846D1081F34C7EB0007C353 /* Bariol_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Bold.otf; sourceTree = "<group>"; };
+		F846D1091F34C7EB0007C353 /* Bariol_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Light.otf; sourceTree = "<group>"; };
+		F846D10A1F34C7EB0007C353 /* Bariol_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular.otf; sourceTree = "<group>"; };
+		F846D10B1F34C7EB0007C353 /* Bariol_Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Thin.otf; sourceTree = "<group>"; };
+		F846D10C1F34C9E10007C353 /* ico_facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_facebook@2x.png"; sourceTree = "<group>"; };
+		F846D10D1F34C9E10007C353 /* ico_google@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_google@2x.png"; sourceTree = "<group>"; };
+		F846D10E1F34C9E10007C353 /* ico_instagram@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_instagram@2x.png"; sourceTree = "<group>"; };
+		F846D10F1F34C9E10007C353 /* ico_lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_lock@2x.png"; sourceTree = "<group>"; };
+		F846D1101F34C9E10007C353 /* ico_twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_twitter@2x.png"; sourceTree = "<group>"; };
+		F846D1111F34C9E10007C353 /* img_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_bg@2x.png"; sourceTree = "<group>"; };
+		F846D1121F34C9E10007C353 /* img_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_logo@2x.png"; sourceTree = "<group>"; };
+		F84E3A921F3BE849005809EC /* HotelItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelItemView.swift; sourceTree = "<group>"; };
+		F84E3A941F3BE858005809EC /* HotelItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelItemView.xib; sourceTree = "<group>"; };
+		F84E3A961F3BFCD0005809EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F84E3A9A1F3C91DD005809EC /* UIColor+RGBHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBHex.swift"; sourceTree = "<group>"; };
+		F84E3A9C1F3C99D0005809EC /* CronozNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronozNavigationController.swift; sourceTree = "<group>"; };
+		F84E3A9E1F3CECCF005809EC /* HoursSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursSelectView.swift; sourceTree = "<group>"; };
+		F84E3AA01F3CECDE005809EC /* HoursSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HoursSelectView.xib; sourceTree = "<group>"; };
+		F84E3AA21F3D3AA2005809EC /* HotelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelInfo.swift; sourceTree = "<group>"; };
+		F84E3AA41F3D3AAC005809EC /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		F84E3AA61F3D3AB6005809EC /* BookingInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingInfo.swift; sourceTree = "<group>"; };
+		F8856BE81F38B0F400AB8B56 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuViewController.swift; path = ../Lib/SideMenuViewController.swift; sourceTree = "<group>"; };
+		F8856BEA1F38B4E700AB8B56 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		F8856BED1F38B9F000AB8B56 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F8856BEF1F38BAC300AB8B56 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F8B2975E1F5D87F200008B8D /* DateSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateSelectView.xib; sourceTree = "<group>"; };
+		F8B297601F5D8A0700008B8D /* DateSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectView.swift; sourceTree = "<group>"; };
+		F8B297621F5D97B100008B8D /* TimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		F8B297641F5D97D100008B8D /* TimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimePickerView.xib; sourceTree = "<group>"; };
+		F8DE05361F3A541100024EAC /* HotelDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelDetailViewController.swift; sourceTree = "<group>"; };
+		F8DE05381F3AA92C00024EAC /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F8DE05391F3AA92C00024EAC /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		F8DE053A1F3AA92C00024EAC /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		F8DE053B1F3AA92C00024EAC /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		F8DE05421F3BAB1200024EAC /* FilterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
+		F8DE05441F3BAB6400024EAC /* FilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F846D0E91F34C5DD0007C353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8856BEE1F38B9F000AB8B56 /* MapKit.framework in Frameworks */,
+				2C3367396FD2F1A4DC66738F /* Pods_Cronoz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F846D0E31F34C5DD0007C353 = {
+			isa = PBXGroup;
+			children = (
+				F846D0EE1F34C5DD0007C353 /* Cronoz */,
+				F846D0ED1F34C5DD0007C353 /* Products */,
+				F8856BEC1F38B9F000AB8B56 /* Frameworks */,
+				FC94AA4EE2C4175BBF8AB5F6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F846D0ED1F34C5DD0007C353 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F846D0EC1F34C5DD0007C353 /* Cronoz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F846D0EE1F34C5DD0007C353 /* Cronoz */ = {
+			isa = PBXGroup;
+			children = (
+				F846D1011F34C7660007C353 /* Classes */,
+				F846D1051F34C7660007C353 /* Resources */,
+				F846D0F11F34C5DD0007C353 /* ViewController.swift */,
+			);
+			path = Cronoz;
+			sourceTree = "<group>";
+		};
+		F846D1011F34C7660007C353 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F846D0EF1F34C5DD0007C353 /* AppDelegate.swift */,
+				F846D1021F34C7660007C353 /* Controller */,
+				F846D1031F34C7660007C353 /* Lib */,
+				F846D1041F34C7660007C353 /* Model */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F846D1021F34C7660007C353 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8DE05351F3A53FF00024EAC /* Hotel */,
+				F8856BE71F38B0DF00AB8B56 /* Common */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F846D1031F34C7660007C353 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				F84E3A991F3C91C6005809EC /* Utilities */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		F846D1041F34C7660007C353 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F84E3AA21F3D3AA2005809EC /* HotelInfo.swift */,
+				F84E3AA41F3D3AAC005809EC /* UserInfo.swift */,
+				F84E3AA61F3D3AB6005809EC /* BookingInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F846D1051F34C7660007C353 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F846D0F31F34C5DE0007C353 /* Main.storyboard */,
+				F846D0F81F34C5DE0007C353 /* LaunchScreen.storyboard */,
+				F846D0F61F34C5DE0007C353 /* Assets.xcassets */,
+				F846D0FB1F34C5DE0007C353 /* Info.plist */,
+				F84E3A961F3BFCD0005809EC /* GoogleService-Info.plist */,
+				F846D1061F34C7660007C353 /* Fonts */,
+				F846D1071F34C7660007C353 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F846D1061F34C7660007C353 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F8DE05381F3AA92C00024EAC /* OpenSans-Bold.ttf */,
+				F8DE05391F3AA92C00024EAC /* OpenSans-Light.ttf */,
+				F8DE053A1F3AA92C00024EAC /* OpenSans-Regular.ttf */,
+				F8DE053B1F3AA92C00024EAC /* OpenSans-Semibold.ttf */,
+				F846D1081F34C7EB0007C353 /* Bariol_Bold.otf */,
+				F846D1091F34C7EB0007C353 /* Bariol_Light.otf */,
+				F846D10A1F34C7EB0007C353 /* Bariol_Regular.otf */,
+				F846D10B1F34C7EB0007C353 /* Bariol_Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F846D1071F34C7660007C353 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F846D10C1F34C9E10007C353 /* ico_facebook@2x.png */,
+				F846D10D1F34C9E10007C353 /* ico_google@2x.png */,
+				F846D10E1F34C9E10007C353 /* ico_instagram@2x.png */,
+				F846D10F1F34C9E10007C353 /* ico_lock@2x.png */,
+				F846D1101F34C9E10007C353 /* ico_twitter@2x.png */,
+				F846D1111F34C9E10007C353 /* img_bg@2x.png */,
+				F846D1121F34C9E10007C353 /* img_logo@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F84E3A991F3C91C6005809EC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F84E3A9A1F3C91DD005809EC /* UIColor+RGBHex.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F8856BE71F38B0DF00AB8B56 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F8856BEF1F38BAC300AB8B56 /* MainViewController.swift */,
+				F8856BE81F38B0F400AB8B56 /* SideMenuViewController.swift */,
+				F8856BEA1F38B4E700AB8B56 /* MenuTableViewCell.swift */,
+				F84E3A9C1F3C99D0005809EC /* CronozNavigationController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F8856BEC1F38B9F000AB8B56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8856BED1F38B9F000AB8B56 /* MapKit.framework */,
+				F78754A637EE5423265677FC /* Pods_Cronoz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8DE05351F3A53FF00024EAC /* Hotel */ = {
+			isa = PBXGroup;
+			children = (
+				F8DE05411F3BAB0000024EAC /* CustomWizardViews */,
+				F8DE05401F3B562E00024EAC /* TableViewCells */,
+				F8DE05361F3A541100024EAC /* HotelDetailViewController.swift */,
+			);
+			name = Hotel;
+			sourceTree = "<group>";
+		};
+		F8DE05401F3B562E00024EAC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F8DE05411F3BAB0000024EAC /* CustomWizardViews */ = {
+			isa = PBXGroup;
+			children = (
+				F8DE05421F3BAB1200024EAC /* FilterView.xib */,
+				F8DE05441F3BAB6400024EAC /* FilterView.swift */,
+				F84E3A941F3BE858005809EC /* HotelItemView.xib */,
+				F84E3A921F3BE849005809EC /* HotelItemView.swift */,
+				F84E3AA01F3CECDE005809EC /* HoursSelectView.xib */,
+				F84E3A9E1F3CECCF005809EC /* HoursSelectView.swift */,
+				F8B2975E1F5D87F200008B8D /* DateSelectView.xib */,
+				F8B297601F5D8A0700008B8D /* DateSelectView.swift */,
+				F8B297641F5D97D100008B8D /* TimePickerView.xib */,
+				F8B297621F5D97B100008B8D /* TimePickerView.swift */,
+			);
+			name = CustomWizardViews;
+			sourceTree = "<group>";
+		};
+		FC94AA4EE2C4175BBF8AB5F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58B543E0CDC5B06CF4D9394C /* Pods-Cronoz.debug.xcconfig */,
+				732AAF5B2DEBB3206DD363DE /* Pods-Cronoz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F846D0EB1F34C5DD0007C353 /* Cronoz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F846D0FE1F34C5DE0007C353 /* Build configuration list for PBXNativeTarget "Cronoz" */;
+			buildPhases = (
+				32E23F1BCFD8B2EE85625228 /* [CP] Check Pods Manifest.lock */,
+				F846D0E81F34C5DD0007C353 /* Sources */,
+				F846D0E91F34C5DD0007C353 /* Frameworks */,
+				F846D0EA1F34C5DD0007C353 /* Resources */,
+				8AF9EC88CC1D058C1F20DF5E /* [CP] Embed Pods Frameworks */,
+				D1BD7192AF8B508EE33AA4C3 /* [CP] Copy Pods Resources */,
+				F84E3A981F3BFDCC005809EC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cronoz;
+			productName = Cronoz;
+			productReference = F846D0EC1F34C5DD0007C353 /* Cronoz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F846D0E41F34C5DD0007C353 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Lars K.";
+				TargetAttributes = {
+					F846D0EB1F34C5DD0007C353 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F846D0E71F34C5DD0007C353 /* Build configuration list for PBXProject "Cronoz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F846D0E31F34C5DD0007C353;
+			productRefGroup = F846D0ED1F34C5DD0007C353 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F846D0EB1F34C5DD0007C353 /* Cronoz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F846D0EA1F34C5DD0007C353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DE053C1F3AAD0900024EAC /* OpenSans-Bold.ttf in Resources */,
+				F8DE053D1F3AAD0900024EAC /* OpenSans-Light.ttf in Resources */,
+				F8B2975F1F5D87F200008B8D /* DateSelectView.xib in Resources */,
+				F8DE053E1F3AAD0900024EAC /* OpenSans-Regular.ttf in Resources */,
+				F8DE053F1F3AAD0900024EAC /* OpenSans-Semibold.ttf in Resources */,
+				F84E3A951F3BE858005809EC /* HotelItemView.xib in Resources */,
+				F846D11A1F34CE470007C353 /* Bariol_Bold.otf in Resources */,
+				F846D11B1F34CE470007C353 /* Bariol_Light.otf in Resources */,
+				F846D11C1F34CE470007C353 /* Bariol_Regular.otf in Resources */,
+				F846D11D1F34CE470007C353 /* Bariol_Thin.otf in Resources */,
+				F846D1131F34C9E10007C353 /* ico_facebook@2x.png in Resources */,
+				F8B297651F5D97D100008B8D /* TimePickerView.xib in Resources */,
+				F846D1161F34C9E10007C353 /* ico_lock@2x.png in Resources */,
+				F846D1151F34C9E10007C353 /* ico_instagram@2x.png in Resources */,
+				F84E3AA11F3CECDE005809EC /* HoursSelectView.xib in Resources */,
+				F8DE05431F3BAB1200024EAC /* FilterView.xib in Resources */,
+				F84E3A971F3BFCD0005809EC /* GoogleService-Info.plist in Resources */,
+				F846D1191F34C9E10007C353 /* img_logo@2x.png in Resources */,
+				F846D1141F34C9E10007C353 /* ico_google@2x.png in Resources */,
+				F846D1171F34C9E10007C353 /* ico_twitter@2x.png in Resources */,
+				F846D1181F34C9E10007C353 /* img_bg@2x.png in Resources */,
+				F846D0FA1F34C5DE0007C353 /* LaunchScreen.storyboard in Resources */,
+				F846D0F71F34C5DE0007C353 /* Assets.xcassets in Resources */,
+				F846D0F51F34C5DE0007C353 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32E23F1BCFD8B2EE85625228 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8AF9EC88CC1D058C1F20DF5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cronoz/Pods-Cronoz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1BD7192AF8B508EE33AA4C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cronoz/Pods-Cronoz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F84E3A981F3BFDCC005809EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:517183084948:ios:41ea07f308424d58\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"/Volumes/Work/Projects/BookingApp/Sergio/CRONOZ/iOS/Cronoz/cronoz-test-firebase-crashreporting-4egdr-3d6725e755.json\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F846D0E81F34C5DD0007C353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84E3A9D1F3C99D0005809EC /* CronozNavigationController.swift in Sources */,
+				F8DE05451F3BAB6400024EAC /* FilterView.swift in Sources */,
+				F84E3AA31F3D3AA2005809EC /* HotelInfo.swift in Sources */,
+				F8DE05371F3A541100024EAC /* HotelDetailViewController.swift in Sources */,
+				F846D0F21F34C5DD0007C353 /* ViewController.swift in Sources */,
+				F8856BE91F38B0F400AB8B56 /* SideMenuViewController.swift in Sources */,
+				F84E3A931F3BE84A005809EC /* HotelItemView.swift in Sources */,
+				F8B297631F5D97B100008B8D /* TimePickerView.swift in Sources */,
+				F8856BEB1F38B4E700AB8B56 /* MenuTableViewCell.swift in Sources */,
+				F8B297611F5D8A0700008B8D /* DateSelectView.swift in Sources */,
+				F84E3AA51F3D3AAC005809EC /* UserInfo.swift in Sources */,
+				F84E3A9F1F3CECCF005809EC /* HoursSelectView.swift in Sources */,
+				F84E3A9B1F3C91DD005809EC /* UIColor+RGBHex.swift in Sources */,
+				F84E3AA71F3D3AB6005809EC /* BookingInfo.swift in Sources */,
+				F846D0F01F34C5DD0007C353 /* AppDelegate.swift in Sources */,
+				F8856BF01F38BAC300AB8B56 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F846D0F31F34C5DE0007C353 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F846D0F41F34C5DE0007C353 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F846D0F81F34C5DE0007C353 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F846D0F91F34C5DE0007C353 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F846D0FC1F34C5DE0007C353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F846D0FD1F34C5DE0007C353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F846D0FF1F34C5DE0007C353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B543E0CDC5B06CF4D9394C /* Pods-Cronoz.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Cronoz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.temp.cronoz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F846D1001F34C5DE0007C353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732AAF5B2DEBB3206DD363DE /* Pods-Cronoz.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Cronoz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.temp.cronoz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F846D0E71F34C5DD0007C353 /* Build configuration list for PBXProject "Cronoz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F846D0FC1F34C5DE0007C353 /* Debug */,
+				F846D0FD1F34C5DE0007C353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F846D0FE1F34C5DE0007C353 /* Build configuration list for PBXNativeTarget "Cronoz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F846D0FF1F34C5DE0007C353 /* Debug */,
+				F846D1001F34C5DE0007C353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F846D0E41F34C5DD0007C353 /* Project object */;
+}
